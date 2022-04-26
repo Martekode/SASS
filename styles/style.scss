@@ -1,3 +1,4 @@
+@import './changesSASS'; //imoprted the changes from seperate file and linked it 
 body {
     font: 100% "Space Mono", monospace;
     color: #2748B3;
@@ -19,9 +20,10 @@ article section {
     flex-grow: 1;
     flex-basis: 45%;
     border: 1px silver solid;
-    -webkit-box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
-    -moz-box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
-    box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
+    @include theme(); // theme icluded to add the bow shadows
+    //-webkit-box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75); added to theme
+    //-moz-box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75); added to theme
+    //box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75); added to theme
     padding: 16px;
     margin: 16px;
     clear: both;
