@@ -6,6 +6,7 @@
   width: 100%;
 }
 
+@use 'sass.math';
 body {
   font: 100% "Space Mono", monospace;
   color: #2748B3;
@@ -34,7 +35,7 @@ article section {
       flex-basis: 45%;
   border: 1px silver solid;
   -webkit-box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
-  box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
+          box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
   padding: 0.5em;
   margin: 16px;
   clear: both;
@@ -96,13 +97,19 @@ h6 {
 
 .success {
   background-color: green;
+  -webkit-box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
+          box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
 }
 
 .error {
   background-color: red;
+  -webkit-box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
+          box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
 }
 
 .warning {
   background-color: orange;
+  -webkit-box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
+          box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
 }
 /*# sourceMappingURL=style.css.map */

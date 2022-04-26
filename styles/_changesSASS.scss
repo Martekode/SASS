@@ -1,7 +1,5 @@
 $padding : 1em ;
-@mixin theme {
-    -webkit-box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
-    -moz-box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
+@mixin theme{
     box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
 }
 %css {
@@ -10,5 +8,5 @@ $padding : 1em ;
     padding: $padding; //general padding added
     color: #2748B3;
     background-color: #000;
-    width: 100%
+    width: 100%;
 }
