@@ -3,7 +3,7 @@ body {
     font: 100% "Space Mono", monospace;
     color: #2748B3;
     margin: 0px;
-    padding: 0px;
+    padding: $padding - $padding; //variable 0 
     background-color: #000;
     background-image: radial-gradient(#fff, rgba(255, 255, 255, 0.2) 2px, transparent 40px), radial-gradient(#fff, rgba(255, 255, 255, 0.15) 1px, transparent 30px), radial-gradient(#fff, rgba(255, 255, 255, 0.1) 2px, transparent 40px), radial-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1) 2px, transparent 30px);
     background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
@@ -24,7 +24,8 @@ article section {
     //-webkit-box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75); added to theme
     //-moz-box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75); added to theme
     //box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75); added to theme
-    padding: 16px;
+    //padding: 16px; changed
+    padding: $padding;
     margin: 16px;
     clear: both;
     overflow: auto;
@@ -47,7 +48,8 @@ article code {
     margin-bottom: 1.6em;
     max-width: 100%;
     overflow: auto;
-    padding: 1em 1.5em;
+    padding: $padding; //genral padding
+    //padding: 1em 1.5em; changed
     display: block;
     word-wrap: break-word
 }
@@ -75,7 +77,8 @@ h1 {
 h6 {
     text-align: center;
     font-size: 2em;
-    padding: 32px;
+    padding: $padding*2; // padding times 2
+    //padding: 32px; changed
     margin-bottom: 0px
 }
 
@@ -84,7 +87,8 @@ h6 {
 .error,
 .warning {
     border: 1px solid #ccc;
-    padding: 10px;
+    //padding: 10px; changed
+    padding: $padding; //general padding added
     color: #2748B3;
     background-color: #000;
     width: 100%
